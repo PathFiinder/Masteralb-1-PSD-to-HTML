@@ -456,7 +456,7 @@ header.logo {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   header.logo img {
     width: 300px;
   }

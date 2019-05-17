@@ -381,7 +381,7 @@ div.logo-second {
   bottom: 27px;
   right: 30px;
   opacity: 0.4;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 header.logo {
@@ -433,6 +433,7 @@ header.logo {
   div.logo-second {
     bottom: -190px;
     right: calc((800px - 353px)/2);
+    margin-bottom: 40px;
   }
 }
 

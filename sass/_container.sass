@@ -1,0 +1,220 @@
+                         
+.container
+    position: relative
+    width: 920px
+    margin: 0 auto 54px auto
+    +dispFlex(row)
+    .col-1
+        margin-right: 39.5px
+        flex-basis: 420px
+        height: 1127px
+        +dispFlex(column)
+        section
+            +dispFlex(column)
+            &.register
+                flex-basis: 508px
+                .form-box
+                    height: calc(508px - 32px - 16px)
+                    border: 20px solid rgba(black,0.3)
+                    border-bottom-width: 19px
+                    border-left-width: 18px
+                    border-radius: 5px
+                    .reg-form
+                        padding: 22px 21px 18px 23px
+            &.send-email
+                margin-top: 40px
+                flex-grow: 1
+                .form-content
+                    .form-box
+                        height: 524px
+                        border: 20px solid rgba(black,0.3)
+                        border-right-width: 18px
+                        border-left-width: 18px
+                        border-radius: 5px
+                        .reg-form
+                            padding: 22px 22px 25px 24px
+                            textarea
+                                flex-basis: 230px
+                                resize: none
+                                padding: 14px 15px
+                                margin-bottom: 11px
+    .col-2
+        flex-basis: 421px
+        margin-left: 39.5px 
+        height: 919px
+        +dispFlex(column)
+        section
+            +dispFlex(column)
+            &.sign-in-form
+                flex-basis: 312px
+                margin-bottom: 27px
+                .form-content
+                    h1
+                        margin-bottom: 22px
+                    .form-box
+                        height: 254px
+                        border: 20px solid rgba(black,0.3)
+                        border-bottom-width: 22px
+                        border-left-width: 18px
+                        border-radius: 5px
+                        .reg-form
+                            position: relative
+                            padding: 30px 20px 27px 24px
+                            .withIcon
+                                margin-bottom: 15px
+                            button
+                                position: absolute
+                                width: 139px
+                                height: 41px
+                                bottom: 27px
+                                right: 21px 
+            &.recover-form
+                flex-basis: 308px
+                margin-bottom: 37px
+                .form-content
+                    h1
+                        margin-bottom: 25px
+                    .form-box
+                        height: 252px
+                        border: 20px solid rgba(black,0.3)
+                        border-bottom-width: 22px
+                        border-left-width: 18px
+                        border-radius: 5px
+                        .reg-form
+                            position: relative
+                            padding: 30px 20px 27px 24px
+                            .withIcon
+                                margin-bottom: 15px  
+                            button
+                                width: 149px
+                                height: 41px
+                                position: absolute 
+                            button.btn-send
+                                bottom: 27px
+                                left: 22px
+                            button.btn-done
+                                right: 19px
+                                bottom: 27px
+                                background-color: #bcdb97
+                            button.btn-done:hover
+                                background-color: #93d02b
+                                
+
+            &.subscribe-form
+                flex-basis: 235px
+                .form-content
+                    h1
+                        margin-bottom: 15px
+                    .form-box
+                        height: 190px
+                        border: 20px solid rgba(black,0.3)
+                        border-right-width: 19px
+                        border-bottom-width: 20px
+                        border-left-width: 17px
+                        border-radius: 5px
+                        .reg-form
+                            position: relative
+                            padding: 30px 19px 20px 24px
+                            .withIcon
+                                margin-bottom: 26px
+                            button
+                                width: 149px
+                                height: 41px
+                                position: absolute 
+                            button.btn-subscribe
+                                bottom: 20px
+                                left: 22px
+                            button.btn-no-ty
+                                bottom: 20px
+                                right: 18px
+                                background-color: #f4495b
+section
+    .form-content
+        height: 100%
+        h1
+            font-size: 32px
+            text-align: center
+            margin-bottom: 18px
+        .form-box
+            .reg-form
+                height: 100%
+                background-color: #f4f4f4
+                +dispFlex(column)
+                .withIcon
+                    flex-basis: 39px
+                    margin-bottom: 23px
+                    border: 1px solid #c6c6c6
+                    border-radius: 2px
+                    +dispFlex(row)
+                    justify-content: center
+                    align-items: center
+                    i.fas
+                        display: inline-block
+                        color: rgba(grey,0.3)
+                        font-size: 20px
+                        width: 23px
+                        height: 22px
+                        text-align: center
+                        line-height: 22px
+                        flex-basis: 37px
+                        border-right: 1px solid #dedede
+                        box-sizing: content-box
+                        adding-right: 6px
+                    input, select
+                        margin-left: 21px
+                        flex-grow: 1
+                        border: none
+                        margin-right: 10px
+                        background-color: #f4f4f4                                
+                        input::placeholder, select
+                        color: grey
+                button
+                    height: 48px
+                    border: 1px solid #3b9a00
+                    background-color: #93d02b
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.36) 0%, rgba(255, 255, 255, 0.36) 100%)
+                    font-size: 24px
+                    color: #ffffff
+                    cursor: pointer
+                input[type=checkbox] + label 
+                    margin-top: 5px
+                    display: block
+                    position: relative
+                input[type="checkbox"] 
+                    display: none
+                    position: relative
+                label.input-class 
+                    color: #afafaf
+                    padding-left: 10px
+                    margin-bottom: 20px
+                    cursor: pointer
+                input[type=checkbox] + label:before 
+                    content: ""
+                    display: inline-block
+                    position: relative
+                    left: -10px
+                    width: 1.4em
+                    height: 1.4em
+                    border: 1px solid #c6c6c6
+                    border-radius: 3px
+                    vertical-align: bottom
+                input[type=checkbox]:checked + label:after 
+                    content: ""
+                    display: inline-block
+                    background: linear-gradient(#a3d840, #7ec31f)
+                    position: absolute
+                    top: 6px
+                    left: 6px
+                    width: 0.8em
+                    height: 0.8em
+                    border-radius: 3px
+                    vertical-align: bottom   
+
+div.logo-second
+    background-image: url("../images/logo2.png")
+    height: 130px
+    width: 353px
+    position: absolute
+    bottom: 27px
+    right: 30px
+    opacity: 0.4

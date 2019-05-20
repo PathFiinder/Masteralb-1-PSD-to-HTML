@@ -458,7 +458,7 @@ header.logo {
 
 @media (max-width: 415px) {
   header.logo img {
-    width: 300px;
+    width: 350px;
   }
   .container {
     width: 380px;
@@ -508,7 +508,7 @@ header.logo {
 
 @media (max-width: 360px) {
   header.logo img {
-    width: 250px;
+    width: 300px;
   }
   .container {
     width: 280px;

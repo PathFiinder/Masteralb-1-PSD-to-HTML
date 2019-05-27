@@ -1,1 +1,1 @@
-Live: https://pathfiinder.github.io/Weekly-Webdev-Challenge-1-Masteralb/
+Live: https://pathfiinder.github.io/Masteralb-1-PSD-to-HTML-/
